@@ -1,4 +1,3 @@
-import { createWorker } from 'tesseract.js'
 import { AadhaarData } from '../../../types';
 export interface ITesseractExtract {
     

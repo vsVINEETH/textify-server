@@ -11,7 +11,7 @@ app.use(cors(config.cors));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use('/api/user', router);
+app.use('/user', router);
 
 app.use(errorHandler);
 
