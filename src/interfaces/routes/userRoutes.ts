@@ -1,13 +1,9 @@
 import { Router } from "express";
+import { uploads } from "../middlewares/multer";
+import { userController } from "../controllers/UserController";
 
 const router = Router();
 
-router.get('/user', (req, res) => {
-    console.log('hello I am user')
-});
-
-router.post('/user', (req, res) => {
-    console.log(req.body)
-});
+router.post('/extract', uploads, userController.extractText);
 
 export default router;
